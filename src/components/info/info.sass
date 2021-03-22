@@ -1,0 +1,72 @@
+.info
+    width: 75%
+    font-family: Roboto
+    color: black
+    text-align: left
+    
+.info_title
+    font-weight: bold
+    font-size: 24px
+    margin: 0 0 20px 0
+
+.info_subtitle
+    font-weight: bold
+    font-size: 20px
+    margin: 10px 0 14px 0
+    font-style: italic
+
+.info_text
+    font-weight: normal
+    font-size: 16px
+    margin: 0 0 10px 0
+
+.info_text:last-of-type
+    margin: 0 0 20px 0
+
+.info_important-text
+    color: red
+    font-size: 16px
+    margin: 0 0 10px 0
+
+.info_link
+    width: 260px
+    background-color: black
+    padding: 10px 14px
+    color: white
+    text-decoration: none
+    border-radius: 5px
+    margin: 10px 0
+    transition: background-color 0.2s linear
+
+.info_link:hover
+    background-color: red
+    transition: background-color 0.2s linear
+
+.info_link:first-of-type
+    margin-top: 20px
+
+.info_list
+    margin: 0
+    padding-left: 17px
+
+.info__container
+    display: flex
+    flex-direction: column
+    justify-content: left
+
+@media(max-width: 724px)
+    .info
+        width: 95%
+
+    .info_title
+        font-size: 20px
+    
+    .info_subtitle
+        font_size: 18px
+
+    .info_text
+        font-size: 14px
+
+    .info_link
+        width: 230px
+        font-size: 14px

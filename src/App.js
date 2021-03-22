@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
-import Links from './components/Links/Links';
-import Projects from './components/Projects/Projects';
+import MyLinks from './components/MyLinks/MyLinks';
+import MyProjects from './components/MyProjects/MyProjects';
+import BigPopup from './components/BigPopup/BigPopup';
 
 function App() {
   return (
     <div className="App">
       <AboutMe />
-      <Links />
-      <Projects />
+      <MyLinks />
+      <MyProjects />
     </div>
   );
 }

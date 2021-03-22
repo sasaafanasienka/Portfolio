@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 72.3 72.5" style="enable-background:new 0 0 72.3 72.5;" xml:space="preserve">
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{fill:#FF0000;}
 </style>
 <title>logo</title>
-<g>
-	<path class="st0" d="M23,40.6l5.8,14.5l7.6-7.6l13,10.3l9-40.9L11.8,36.3L23,40.6z M45.1,28.6l-14.2,13l-1.8,6.7l-3.3-8.2
-		L45.1,28.6z"/>
-</g>
+<polygon class="st0" points="283.4,236 197.4,150 281.7,65.7 234.3,18.3 150,102.6 64,16.6 16.6,64 102.6,150 18.3,234.3 
+	65.7,281.7 150,197.4 236,283.4 "/>
 </svg>
