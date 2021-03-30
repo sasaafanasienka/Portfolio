@@ -3,7 +3,7 @@ import './info.sass'
 const carouselInfo = 
 <div className='info__container'>
     <h1 className='info info_title'>Carousel</h1>
-    <p className='info info_text'>Учебный проект. React-компонент карусели, который можно переиспользовать в любых других проектах, просто скопировав код</p>
+    <p className='info info_text'>React-компонент карусели, который можно переиспользовать в любых других проектах, просто скопировав код</p>
     <h2 className='info info_subtitle'>Что сделано?</h2>
     <ul className='info info_list'>
         <li className='info info_text'>Работает для любого HTML-контента</li>

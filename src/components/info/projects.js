@@ -6,6 +6,7 @@ import tetrisLogo from '../../images/Tetris.svg'
 import newsAnalyzerInfo from './newsAnalyzerInfo'
 import textCounterInfo from './textCounterInfo'
 import carouselInfo from './carouselInfo'
+import tetrisInfo from './tetrisInfo'
 
 const projects = {
     'TextCounter': {
@@ -26,6 +27,7 @@ const projects = {
     'Tetris': {
         name: 'Tetris',
         icon: tetrisLogo,
+        info: tetrisInfo
     },
 }
 
