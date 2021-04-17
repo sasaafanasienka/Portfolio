@@ -1,29 +1,27 @@
+import projects from '../info/projects'
 import './Project.sass'
-import info from '../info/projects'
 
 type projectProps = {
-    name: string;
-    setPopupData: (info: JSX.Element) => void 
+    title: string
+    setPopupTitle: (title: string) => void 
 }
 
-type infoType = {
-    name: string;
-    icon: string;
-    info: JSX.Element;
-};
+type titleType = {
+    [key: string]: string
+}
 
-const Project: React.FC<projectProps> = (props) => {
+const Project: React.FC<projectProps> = ({title, setPopupTitle}) => {
 
-    function openPopup() {
-        // props.setPopupData(info[props.name].info)
-        // document.querySelector('.BigPopup').classList.add('BigPopup_active')
+    const openPopup = ():void => {
+        setPopupTitle(title)
+        document.querySelector('.BigPopup')!.classList.add('BigPopup_active')
     }
 
     return (
         <button className='Project' onClick={openPopup}>
-            <img alt='project icon' />
-            {/* <img src={info[props.name].icon} alt='project icon' /> */}
+            <img src={(projects[title] as titleType).icon} alt='project icon' />
         </button>
     )
 }
+
 export default Project

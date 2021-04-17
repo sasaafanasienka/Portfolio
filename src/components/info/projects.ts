@@ -8,7 +8,11 @@ import textCounterInfo from './textCounterInfo'
 import carouselInfo from './carouselInfo'
 import tetrisInfo from './tetrisInfo'
 
-const projects = {
+interface IPROJECTS {
+    [key: string]: object
+}
+
+const projects: IPROJECTS = {
     'TextCounter': {
         name: 'TextCounter',
         icon: textCounterLogo,

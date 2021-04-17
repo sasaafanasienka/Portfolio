@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <AboutMe />
       <MyLinks />
-      <MyProjects />
+      <MyProjects data={'a'}/>
     </div>
   );
 }

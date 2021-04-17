@@ -5,19 +5,18 @@ import './MyProjects.sass'
 
 const MyProjects: React.FC = () => {
 
-    const [popupData, setPopupData] = useState<JSX.Element>()
+    const [popupTitle, setPopupTitle] = useState<string>()
 
     return (
         <div className='MyProjects'>
             <h2 className='MyProjects__title'>Мои проекты</h2>
-            <Project name='NewsAnalyzer' setPopupData={setPopupData}/>
-            <Project name='TextCounter' setPopupData={setPopupData}/>
-            <Project name='Tetris' setPopupData={setPopupData}/>
-            <Project name='Carousel' setPopupData={setPopupData}/>
-            <BigPopup>
-                {popupData}
-            </BigPopup>
+            <Project title='NewsAnalyzer' setPopupTitle={setPopupTitle}/>
+            <Project title='TextCounter' setPopupTitle={setPopupTitle}/>
+            <Project title='Tetris' setPopupTitle={setPopupTitle}/>
+            <Project title='Carousel' setPopupTitle={setPopupTitle}/>
+            <BigPopup title={popupTitle!}/>
         </div>
     )
 }
+
 export default MyProjects
