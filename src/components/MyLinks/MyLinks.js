@@ -3,7 +3,7 @@ import linkedin from '../../images/logo_linkedin_light.svg'
 import github from '../../images/logo_github_light.svg'
 import mail from '../../images/logo_mail_light.svg'
 import './MyLinks.sass'
-import Link from '../Link/Link'
+import Link from '../Link/Link.tsx'
 
 function MyLinks() {
     return (
