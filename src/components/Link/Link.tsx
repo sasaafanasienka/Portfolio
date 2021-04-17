@@ -2,12 +2,12 @@ import './Link.sass'
 
 type LinkProps = {
     type: string,
-    target: string
-    children: HTMLElement
+    target: string,
+    children: any
 }
 
-const Link: React.FC<LinkProps> = ({type,target,children}) => {
-    const style = (type === 'text') ? 
+const Link: React.FC<LinkProps> = (props) => {
+    const style = (props.type === 'text') ? 
         {
             width: 'auto',
             padding: '8px'
@@ -18,7 +18,7 @@ const Link: React.FC<LinkProps> = ({type,target,children}) => {
         }
     
     return (
-        <a className='Link' href={target} style={style}>{children}</a>
+        <a className='Link' href={props.target} style={style}>{props.children}</a>
     )
 }
 export default Link

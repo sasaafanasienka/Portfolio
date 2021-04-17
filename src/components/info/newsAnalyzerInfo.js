@@ -1,6 +1,7 @@
 import './info.sass'
 
 const newsAnalyzerInfo = 
+
 <div className='info__container'>
     <h1 className='info info_title'>NewsAnalyzer — мой дипломный проект на Яндекс.Практикуме</h1>
     <p className='info info_text'>Это сервис для анализа происходящих в мире событий. 
@@ -23,8 +24,6 @@ const newsAnalyzerInfo =
     </p>
     <a className='info info_link' href='https://sasaafanasienka.github.io/Praktikum_diploma_project'>Смотреть проект на gh-pages</a>
     <a className='info info_link' href='https://github.com/sasaafanasienka/Praktikum_diploma_project'>Смотреть репозиторий на GitHub</a>
-
-
 </div>
 
 export default newsAnalyzerInfo

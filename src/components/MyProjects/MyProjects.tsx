@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import telegram from '../../images/logo_telegram_light.svg'
 import BigPopup from '../BigPopup/BigPopup'
 import Project from '../Project/Project'
 import './MyProjects.sass'
 
-function MyProjects() {
-    const [popupData, setPopupData] = useState('')
+const MyProjects: React.FC = () => {
+
+    const [popupData, setPopupData] = useState<JSX.Element>()
 
     return (
         <div className='MyProjects'>
