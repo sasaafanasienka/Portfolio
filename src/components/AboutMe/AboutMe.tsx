@@ -1,7 +1,7 @@
 import userpic from '../../images/userpic.jpg'
 import './AboutMe.sass'
 
-function AboutMe() {
+const AboutMe: React.FC = () => {
     return (
         <div className='AboutMe'>
             <img className='AboutMe__userpic' src={userpic}/>
