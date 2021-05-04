@@ -18,9 +18,13 @@ const Project: React.FC<projectProps> = ({title, setPopupTitle}) => {
     }
 
     return (
-        <button className='Project' onClick={openPopup}>
-            <img src={(projects[title] as titleType).icon} alt='project icon' />
-        </button>
+        <div className='Project' onClick={openPopup}>
+            <img className='Project__img' src={(projects[title] as titleType).icon} alt='project icon'/>
+            <p className='Project_text'></p>
+        </div>
+        // <button className='Project' onClick={openPopup}>
+        //     <img src={(projects[title] as titleType).icon} alt='project icon' />
+        // </button>
     )
 }
 

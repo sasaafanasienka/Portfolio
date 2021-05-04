@@ -1,0 +1,8 @@
+.CarouselContent {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    height: auto;
+}
+
