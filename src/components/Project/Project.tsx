@@ -1,26 +1,31 @@
+import { ProgressPlugin } from 'webpack'
 import projects from '../info/projects'
+import Link from '../Link/Link'
 import './Project.sass'
 
 type projectProps = {
-    title: string
-    setPopupTitle: (title: string) => void 
+    description: string
+    deployButtonText: string
+    deployLink: string
+    repoButtonText: string
+    repoLink: string
+    image: any
 }
 
-type titleType = {
-    [key: string]: string
-}
+// type titleType = {
+//     [key: string]: string
+// }
 
-const Project: React.FC<projectProps> = ({title, setPopupTitle}) => {
-
-    const openPopup = ():void => {
-        setPopupTitle(title)
-        document.querySelector('.BigPopup')!.classList.add('BigPopup_active')
-    }
+const Project: React.FC<projectProps> = ({description, deployButtonText, deployLink, repoButtonText, repoLink, image}) => {
 
     return (
-        <div className='Project' onClick={openPopup}>
-            <img className='Project__img' src={(projects[title] as titleType).icon} alt='project icon'/>
-            <p className='Project_text'></p>
+        <div className='Project'>
+            <img className='Project__img' src={image} alt='project icon'/>
+            <p className='Project__description'>{description}</p>
+            <div className='Project__buttons'>
+                <Link type='text' target={deployLink}>{deployButtonText}</Link>
+                <Link type='text' target={repoLink}>{repoButtonText}</Link>
+            </div>
         </div>
         // <button className='Project' onClick={openPopup}>
         //     <img src={(projects[title] as titleType).icon} alt='project icon' />

@@ -9,7 +9,6 @@ type LinkProps = {
 const Link: React.FC<LinkProps> = (props) => {
     const style = (props.type === 'text') ? 
         {
-            width: 'auto',
             padding: '8px'
         } :
         {
