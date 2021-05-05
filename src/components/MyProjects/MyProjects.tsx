@@ -41,6 +41,7 @@ const MyProjects: React.FC = () => {
                 repoButtonText={project.repoButton}
                 repoLink={project.repo}
                 image={project.image}
+                tehnologies={project.tehnologies}
             />
         )
     })

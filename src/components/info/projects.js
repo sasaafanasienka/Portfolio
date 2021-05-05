@@ -12,7 +12,8 @@ const projects = [
     deployPage: "https://sasaafanasienka.github.io/Textcounter/",
     repoButton: "репозиторий",
     repo: "https://github.com/sasaafanasienka/Textcounter",
-    image: textCounterLogo
+    image: textCounterLogo,
+    tehnologies: ['React', 'Redux', 'SCSS']
 },
 {
     name: "Tetris",
@@ -22,7 +23,8 @@ const projects = [
     deployPage: "https://sasaafanasienka.github.io/Tetris/",
     repoButton: "репозиторий",
     repo: "https://github.com/sasaafanasienka/Tetris",
-    image: tetrisLogo
+    image: tetrisLogo,
+    tehnologies: ['React', 'Redux', 'SASS']
 },
 {
     name: "NewsAnalyzer",
@@ -32,7 +34,8 @@ const projects = [
     deployPage: "https://sasaafanasienka.github.io/Praktikum_diploma_project",
     repoButton: "репозиторий",
     repo: "https://github.com/sasaafanasienka/Praktikum_diploma_project",
-    image: newsAnalyzerLogo
+    image: newsAnalyzerLogo,
+    tehnologies: ['HTML', 'CSS', 'JS']
 },
 {
     name: "Carousel",
@@ -42,7 +45,8 @@ const projects = [
     deployPage: "https://sasaafanasienka.github.io/Carousel/",
     repoButton: "репозиторий",
     repo: "https://github.com/sasaafanasienka/Carousel",
-    image: carouselLogo
+    image: carouselLogo,
+    tehnologies: ['React', 'CSS']
 }
 ]
 
