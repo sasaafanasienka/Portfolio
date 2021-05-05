@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9e776dfb.chunk.css",
-    "main.js": "/Portfolio/static/js/main.3dc863fa.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.3dc863fa.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.5f567774.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f81f4c90.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f81f4c90.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.49e1d723.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.49e1d723.js.map",
     "static/js/2.94e15a2a.chunk.js": "/Portfolio/static/js/2.94e15a2a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7632624e.chunk.js": "/Portfolio/static/js/3.7632624e.chunk.js",
     "static/js/3.7632624e.chunk.js.map": "/Portfolio/static/js/3.7632624e.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.9e776dfb.chunk.css.map": "/Portfolio/static/css/main.9e776dfb.chunk.css.map",
+    "static/css/main.5f567774.chunk.css.map": "/Portfolio/static/css/main.5f567774.chunk.css.map",
     "static/js/2.94e15a2a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.94e15a2a.chunk.js.LICENSE.txt",
     "static/media/Carousel.6ea776da.svg": "/Portfolio/static/media/Carousel.6ea776da.svg",
     "static/media/NewsAnalyzer.4689a345.png": "/Portfolio/static/media/NewsAnalyzer.4689a345.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.49e1d723.js",
     "static/js/2.94e15a2a.chunk.js",
-    "static/css/main.9e776dfb.chunk.css",
-    "static/js/main.3dc863fa.chunk.js"
+    "static/css/main.5f567774.chunk.css",
+    "static/js/main.f81f4c90.chunk.js"
   ]
 }
