@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from '../Carousel/Carousel'
 import Project from '../Project/Project'
 import './MyProjects.sass'
@@ -6,37 +6,56 @@ import projects from '../info/projects.js'
 
 const MyProjects: React.FC = () => {
 
-    const setCarouselSettings = ():any => {
+    const getCarouselSettings = ():any => {
         const screenWidth = window.screen.width
-        if (screenWidth > 900) { return 3 }
-        if (screenWidth > 600) { return 2 }
-        return 1
+        if (screenWidth > 900) {  
+            return {
+                itemsPerView: 3,
+                buttonSize: 40,
+                buttonPos: -40
+            }
+        }
+        if (screenWidth > 600) {  
+            return {
+                itemsPerView: 2,
+                buttonSize: 30,
+                buttonPos: -30
+            }
+        }
+        return {
+            itemsPerView: 1,
+            buttonSize: 20,
+            buttonPos: -20
+        }
     }
 
-    const [itemsPerView, setItemsPerview] = useState(setCarouselSettings())
+    const [settings, setSettings] = useState(getCarouselSettings())
 
-    const content = projects.map((el) => {
+    const content = projects.map((project: any) => {
         return(
             <Project 
-                key={el.id}
-                description={el.description}
-                deployButtonText={el.deployPageButton}
-                deployLink={el.deployPage}
-                repoButtonText={el.repoButton}
-                repoLink={el.repo}
-                image={el.image}
+                key={project.id}
+                description={project.description}
+                deployButtonText={project.deployPageButton}
+                deployLink={project.deployPage}
+                repoButtonText={project.repoButton}
+                repoLink={project.repo}
+                image={project.image}
             />
         )
     })
 
+    console.log(settings)
 
     return (
         <div className='MyProjects'>
             <h2 className='MyProjects__title'>Мои проекты</h2>
             <Carousel
                 gap={20}
-                itemsPerView={itemsPerView}
+                itemsPerView={settings.itemsPerView}
                 loop={true}
+                buttonSize={settings.buttonSize}
+                buttonPos={settings.buttonPos}
             >
                 {content}
             </Carousel>
