@@ -2,7 +2,17 @@
 @import './__button/MyLinks__button'
 
 .MyLinks 
-    width: 100%
+    width: 1000px
     display: flex
-    justify-content: center
-    margin: 0 0 30px 0
+    margin: 0 auto 30px
+    padding: 0 50px
+    box-sizing: border-box
+    flex-wrap: wrap
+
+@media(max-width: 1100px)
+    .MyLinks
+        width: 100%
+
+@media(max-width: 500px)
+    .MyLinks
+        padding: 0 25px

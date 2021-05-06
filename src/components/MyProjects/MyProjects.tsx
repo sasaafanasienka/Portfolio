@@ -46,8 +46,6 @@ const MyProjects: React.FC = () => {
         )
     })
 
-    console.log(settings)
-
     return (
         <div className='MyProjects'>
             <h2 className='MyProjects__title'>Мои проекты</h2>

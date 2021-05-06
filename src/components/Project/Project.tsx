@@ -1,5 +1,3 @@
-import { ProgressPlugin } from 'webpack'
-import projects from '../info/projects'
 import Link from '../Link/Link'
 import './Project.sass'
 
@@ -13,15 +11,13 @@ type projectProps = {
     tehnologies: any
 }
 
-// type titleType = {
-//     [key: string]: string
-// }
-
 const Project: React.FC<projectProps> = ({description, deployButtonText, deployLink, repoButtonText, repoLink, image, tehnologies}) => {
 
-    const tehnologiesArr = tehnologies.map((el:any) => {
-        return <div className='Project__tehnology'>{el}</div>
-    })
+    let tehnologiesArr:Array<JSX.Element> = []
+
+    for (let i = 0; i < tehnologies.length; i++) {
+        tehnologiesArr.push(<div key={i} className='Project__tehnology'>{tehnologies[i]}</div>)
+    }
 
     return (
         <div className='Project'>
@@ -35,9 +31,6 @@ const Project: React.FC<projectProps> = ({description, deployButtonText, deployL
                 <Link type='text' target={repoLink}>{repoButtonText}</Link>
             </div>
         </div>
-        // <button className='Project' onClick={openPopup}>
-        //     <img src={(projects[title] as titleType).icon} alt='project icon' />
-        // </button>
     )
 }
 
