@@ -94,7 +94,7 @@ class Carousel extends Component {
         const oldIndex = this.state.correctPositions.indexOf(this.state.currentPos)
         const directionCorrection = (direction === 'left') ? 1 : -1        
         let newPos = this.state.correctPositions[oldIndex + directionCorrection] 
-        if (!newPos) {
+        if (newPos === undefined) {
             newPos = this.state.currentPos
             animatedMove(currentPos, newPos)
         } else {
