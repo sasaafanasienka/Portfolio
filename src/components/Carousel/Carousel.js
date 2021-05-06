@@ -35,6 +35,7 @@ class Carousel extends Component {
         this.buttonMove = this.buttonMove.bind(this)
         this.paginationMove = this.paginationMove.bind(this)
         this.positionCorrection = this.positionCorrection.bind(this)
+        this.fastSwipe = this.fastSwipe.bind(this)
         this.arrowButtonsManage = this.arrowButtonsManage.bind(this)
         this.getLoop = this.getLoop.bind(this)
     }
@@ -71,7 +72,6 @@ class Carousel extends Component {
     touchMove(movingPoint) {
         const offset = movingPoint - this.state.touchPoint
         this.carouselContent.current.style.left = `${this.state.currentPos + offset}px`
-        // console.log(this.carouselContent.current.style.left)
     }
 
     positionCorrection(mouseUpPos) {
@@ -89,6 +89,21 @@ class Carousel extends Component {
         this.getLoop(newPos)
     }
 
+    fastSwipe(mouseUpPos, direction) {
+        const currentPos = this.state.currentPos - this.state.touchPoint + mouseUpPos
+        const oldIndex = this.state.correctPositions.indexOf(this.state.currentPos)
+        const directionCorrection = (direction === 'left') ? 1 : -1        
+        let newPos = this.state.correctPositions[oldIndex + directionCorrection] 
+        if (!newPos) {
+            newPos = this.state.currentPos
+            animatedMove(currentPos, newPos)
+        } else {
+            animatedMove(currentPos, newPos, 'fastSwipe')
+        }
+        this.arrowButtonsManage(this.state.correctPositions.indexOf(newPos))
+        this.getLoop(newPos)
+    }
+
     buttonMove(direction) {
         const currentIndex = this.state.correctPositions.indexOf(this.state.currentPos)
         const newPos = this.state.correctPositions[currentIndex + direction]
@@ -98,7 +113,6 @@ class Carousel extends Component {
     }
 
     paginationMove(id) {
-        console.log(this.state.correctPositions)
         //if (loop) we have additional carousel items in DOM
         const loopCorrection = this.loop && this.itemsQuantity > this.itemsPerView ? this.itemsPerView : 0
         let newPos = this.state.correctPositions[id + loopCorrection]
@@ -146,6 +160,7 @@ class Carousel extends Component {
                     <CarouselContent onMoveStart={this.saveTouchPoint} 
                                     onMove={this.touchMove} 
                                     onMoveEnd={this.positionCorrection}
+                                    onFastSwipeEnd={this.fastSwipe}
                                     ref={this.carouselContent}
                     >
                         {makeContentDOM(this.props.children, this.itemsPerView, this.loop)}  
