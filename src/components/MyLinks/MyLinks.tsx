@@ -20,7 +20,7 @@ const MyLinks: React.FC = () => {
             <Link type='icon' target='https://github.com/sasaafanasienka'>
                 <img className='MyLinks__icon' src={github} alt='github button'/>
             </Link>
-            <Link type='text' target='https://cloud.mail.ru/public/pGDt/DTBYUnmk7'>СКАЧАТЬ РЕЗЮМЕ</Link>
+            <Link type='text' target='https://cloud.mail.ru/public/dFd8/aszwYWr4T'>СКАЧАТЬ РЕЗЮМЕ</Link>
         </div>
     )
 }
