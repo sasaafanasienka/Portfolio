@@ -40,7 +40,7 @@ const projects = [
 {
     name: "Carousel",
     id: 6,
-    description: "Переиспользуемый react-компонент карусели. Управаляется как свайпами мышью и пальцами, так и экранными кнопками",
+    description: "Переиспользуемый react-компонент карусели. Управляется как свайпами мышью и пальцами, так и экранными кнопками",
     deployPageButton: "смотреть на gh-pages",
     deployPage: "https://sasaafanasienka.github.io/Carousel/",
     repoButton: "репозиторий",
