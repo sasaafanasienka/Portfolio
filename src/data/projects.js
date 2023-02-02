@@ -1,7 +1,7 @@
-import textCounterLogo from '../../images/TextCounter.svg'
-import carouselLogo from '../../images/Carousel.svg'
-import newsAnalyzerLogo from '../../images/NewsAnalyzer.png'
-import tetrisLogo from '../../images/Tetris.svg'
+import textCounterLogo from '../images/TextCounter.svg'
+import carouselLogo from '../images/Carousel.svg'
+import newsAnalyzerLogo from '../images/NewsAnalyzer.png'
+import tetrisLogo from '../images/Tetris.svg'
 
 const projects = [
 {
