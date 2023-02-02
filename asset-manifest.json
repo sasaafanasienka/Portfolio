@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6cf2bef6.chunk.css",
-    "main.js": "/Portfolio/static/js/main.2fae6681.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.2fae6681.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.fd903643.chunk.css",
+    "main.js": "/Portfolio/static/js/main.59b3f752.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.59b3f752.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.2eade317.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.2eade317.js.map",
-    "static/js/2.f00e7533.chunk.js": "/Portfolio/static/js/2.f00e7533.chunk.js",
-    "static/js/2.f00e7533.chunk.js.map": "/Portfolio/static/js/2.f00e7533.chunk.js.map",
+    "static/css/2.34958c16.chunk.css": "/Portfolio/static/css/2.34958c16.chunk.css",
+    "static/js/2.c0077ebd.chunk.js": "/Portfolio/static/js/2.c0077ebd.chunk.js",
+    "static/js/2.c0077ebd.chunk.js.map": "/Portfolio/static/js/2.c0077ebd.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.6cf2bef6.chunk.css.map": "/Portfolio/static/css/main.6cf2bef6.chunk.css.map",
-    "static/js/2.f00e7533.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f00e7533.chunk.js.LICENSE.txt",
+    "static/css/2.34958c16.chunk.css.map": "/Portfolio/static/css/2.34958c16.chunk.css.map",
+    "static/css/main.fd903643.chunk.css.map": "/Portfolio/static/css/main.fd903643.chunk.css.map",
+    "static/js/2.c0077ebd.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c0077ebd.chunk.js.LICENSE.txt",
     "static/media/Carousel.6ea776da.svg": "/Portfolio/static/media/Carousel.6ea776da.svg",
     "static/media/NewsAnalyzer.4689a345.png": "/Portfolio/static/media/NewsAnalyzer.4689a345.png",
     "static/media/Tetris.136fadab.svg": "/Portfolio/static/media/Tetris.136fadab.svg",
-    "static/media/TextCounter.5aef97ee.svg": "/Portfolio/static/media/TextCounter.5aef97ee.svg",
-    "static/media/left_arrow.9d3f788d.svg": "/Portfolio/static/media/left_arrow.9d3f788d.svg",
-    "static/media/right_arrow.4e2eb212.svg": "/Portfolio/static/media/right_arrow.4e2eb212.svg"
+    "static/media/TextCounter.5aef97ee.svg": "/Portfolio/static/media/TextCounter.5aef97ee.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2eade317.js",
-    "static/js/2.f00e7533.chunk.js",
-    "static/css/main.6cf2bef6.chunk.css",
-    "static/js/main.2fae6681.chunk.js"
+    "static/css/2.34958c16.chunk.css",
+    "static/js/2.c0077ebd.chunk.js",
+    "static/css/main.fd903643.chunk.css",
+    "static/js/main.59b3f752.chunk.js"
   ]
 }
